@@ -122,6 +122,7 @@ h1 { max-width: 760px; font-size: clamp(48px, 7vw, 98px); }
 .link-card strong { display: block; margin-bottom: 6px; color: var(--accent-dark); font-family: Arial, Helvetica, sans-serif; font-size: 13px; letter-spacing: 0.07em; text-transform: uppercase; }
 .simple-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 30px 0 0; padding: 0; list-style: none; }
 .simple-list li { padding: 18px 20px; border: 1px solid var(--line); background: var(--paper-soft); }
+.simple-list a { font-weight: 700; }
 .site-footer { border-top: 1px solid var(--line); background: #1f1b17; color: #eadcc4; }
 .footer-inner { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; padding: 34px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
 .footer-inner p { margin: 0; }
