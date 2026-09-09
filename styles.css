@@ -64,7 +64,7 @@ a:hover { color: var(--accent); }
   min-height: 76vh;
   display: grid;
   align-items: end;
-  background: linear-gradient(90deg, rgba(20, 18, 16, 0.82) 0%, rgba(20, 18, 16, 0.58) 43%, rgba(20, 18, 16, 0.12) 100%), var(--hero-image) center / cover no-repeat;
+  background: linear-gradient(90deg, rgba(20, 18, 16, 0.82) 0%, rgba(20, 18, 16, 0.58) 43%, rgba(20, 18, 16, 0.12) 100%), var(--hero-image) var(--hero-position, center) / cover no-repeat;
   color: var(--paper-soft);
 }
 .hero-inner { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; padding: 88px 0 72px; }
@@ -81,7 +81,8 @@ h1, h2, h3 { margin: 0; line-height: 1.06; letter-spacing: 0; }
 h1 { max-width: 760px; font-size: clamp(48px, 7vw, 98px); }
 .hero-subtitle { max-width: 680px; margin: 20px 0 0; color: #f2e7d3; font-size: clamp(22px, 3vw, 34px); line-height: 1.25; }
 .page-hero {
-  background: linear-gradient(90deg, rgba(20, 18, 16, 0.82) 0%, rgba(20, 18, 16, 0.46) 48%, rgba(20, 18, 16, 0.08) 100%), var(--hero-image) center / cover no-repeat;
+  min-height: 390px;
+  background: linear-gradient(90deg, rgba(20, 18, 16, 0.82) 0%, rgba(20, 18, 16, 0.46) 48%, rgba(20, 18, 16, 0.08) 100%), var(--hero-image) var(--hero-position, center) / cover no-repeat;
   color: var(--paper-soft);
 }
 .page-hero .hero-inner { padding: 92px 0; }
@@ -116,7 +117,8 @@ h1 { max-width: 760px; font-size: clamp(48px, 7vw, 98px); }
 .news-list p { margin: 0 0 8px; font-size: 16px; line-height: 1.45; }
 .news-list a { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; }
 .feature-image { overflow: hidden; border: 1px solid var(--line); background: #fffaf1; }
-.feature-image img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.feature-image img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: var(--feature-position, center); }
+.feature-image.full-image img { aspect-ratio: auto; object-fit: contain; }
 .link-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
 .link-card { min-height: 112px; padding: 20px; border: 1px solid var(--line); background: var(--paper-soft); color: var(--ink); text-decoration: none; }
 .link-card strong { display: block; margin-bottom: 6px; color: var(--accent-dark); font-family: Arial, Helvetica, sans-serif; font-size: 13px; letter-spacing: 0.07em; text-transform: uppercase; }
