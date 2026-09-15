@@ -1,3 +1,7 @@
+if (window.location.pathname === '/index.html') {
+  window.location.replace('/' + window.location.search + window.location.hash);
+}
+
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
